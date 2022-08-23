@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento onclick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="nav">
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><input type="search" class="search" name="busqueda" placeholder="Search">
+            </li>
+            <li><button class="btn">Login</button></li>
+        </ul>
+    </div>  
+    <div class="main">
+        <div class="row-0"></div>
+        <div class="row-2">
+            <div class="perfil">
+                <div class="cuerpo">
+                    <h1>ninja</h1>
+                    <i>noun</i>
+                    <p>Plural:<i>ninjas</i></p>
+                    <button onclick="alert('Ninja was liked')" class="btn-likes">13 likes</button>
+                </div>
+                <div class="cuerpo-2">
+                    <p> A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="info">
+                <div class="cuerpo">
+                    <h1>ninja</h1>
+                    <i>noun</i>
+                    <p>Plural:<i>ninjas</i></p>
+                    <button onclick="alert('Ninja was liked')" class="btn-likes">37 likes</button>
+                </div>
+                <div class="cuerpo-2">
+                    <p> A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="row-0"></div>
+        <div class="row-1">
+            <div class="conection">
+                <h2>Dojonary is defined by <strong>YOU</strong> </h2>
+                <button onclick="hide(this)"  class="btn-add" >Add Definition</button>
+            </div>
+        </div>
+        <div class="row-0"></div>
+    </div>
+<script>
+    function hide(element) {
+    element.remove();
+}
+</script>    
+</body>
+</html>
